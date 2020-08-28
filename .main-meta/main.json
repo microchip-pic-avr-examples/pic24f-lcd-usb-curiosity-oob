@@ -1,0 +1,56 @@
+{
+   "metaDataVersion":"1.0.0",
+   "category":"com.microchip.ide.project",
+   "content":{
+      "metaDataVersion":"1.0.0",
+      "name":"com.microchip.mplabx.project.pic24f-lcd-usb-curiosity-oob",
+      "version":"x.x.x",
+      "displayName":"PIC24F LCD USB Curiosity Development Board Out-of-the-Box Demo",
+      "projectName":"pic24f-lcd-usb-curiosity-oob",
+      "shortDescription":"This is the out-of-the-box demo software which runs on PIC24F LCD USB Curiosity Development Board.",
+      "ide":{
+         "name":"MPLABX",
+         "semverRange":">=5.40.0"
+      },
+      "compiler":{
+         "name":"XC16",
+         "semverRange":"^1.50.0"
+      },
+      "dfp":{
+         "name":"PIC24F_GL_GU_DFP",
+         "semverRange":">=x.x.x"
+      },
+      "device":{
+         "metaDataVersion":"1.0.0",
+         "category":"com.microchip.portal.contentRef",
+         "content":{
+            "metaDataVersion":"1.0.0",
+            "category":"com.microchip.device",
+            "name":"PIC24FJ512GU410",
+            "versionRange":"*"
+         }
+      },
+      "peripherals":[
+         "SPI",
+         "LCD",
+         "USB"
+      ],
+      "keywords":[
+         "PIC24F",
+         "Segmented LCD",
+         "LCD",
+         "USB"
+      ]
+   },
+   "additionalData":{
+      "longDescription":{
+         "metaDataVersion":"1.0.0",
+         "category":"com.microchip.portal.fileRef",
+         "content":{
+            "metaDataVersion":"1.0.0",
+            "fileName":"./README.md",
+            "mimeType":"text/markdown"
+         }
+      }
+   }
+}
