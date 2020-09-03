@@ -48,16 +48,12 @@ double POWER_GetVddVoltage(void)
     uint16_t vdd;
     uint16_t i=0;
     uint16_t band_gap;
-    
-    
     vdd = getBandGapChannelOutput(CHANNEL_AVDD);
     while(HLVDCONbits.BGVST == 0)
     {
     }
     // Get the BandGap Channel Voltage
     band_gap = getBandGapChannelOutput(CHANNEL_VBG);
-    
-    
     return ( (BANDGAP_TYPICAL_VOLTAGE * vdd) / band_gap );
 }
 
