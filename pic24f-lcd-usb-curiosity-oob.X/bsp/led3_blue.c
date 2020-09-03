@@ -18,73 +18,34 @@ limitations under the License.
 #define LED3_BLUE_H
 
 #include <xc.h>
+#include <stdbool.h>
+#include "mcc_generated_files/mccp6_compare.h"
 
-#define LED3_BLUE_LAT     LATDbits.LATD11
-#define LED3_BLUE_TRIS    TRISDbits.TRISD11
+static bool ismccp6Enabled = false;
 
-#define LED_ON  1
-#define LED_OFF 0
-
-#define INPUT  1
-#define OUTPUT 0
-
-#define MAXIMUM_INTENSITY 0x03FF
-#define DEFAULT_INTENSITY (MAXIMUM_INTENSITY/2)
-
-static uint16_t current_intensity = DEFAULT_INTENSITY;
-
-void LED3_BLUE_On(void)
+void LED3_BLUE_On(void) 
 {
-	LED3_BLUE_TRIS = 0;
-    
-    _RP12R  = 20; //16 = OCM4A -> RD11[RP12]  (blue)
-
-    //Blue - uses CCP6-PWM
-    CCP6RAL = 0;
-    CCP6RBL = current_intensity;
-    CCP6PRL = MAXIMUM_INTENSITY;
-    CCP6PRH = 0;
-    CCP6TMRL = 0;
-    CCP6CON1Lbits.MOD = 0b0100;     //dual-compare
-    CCP6CON1Lbits.T32 = 0;          //16-bit mode
-    CCP6CON1Lbits.CLKSEL = 0b000;   //System clock
-    CCP6CON1Lbits.TMRPS = 0b00;     //1:1 Pre-scaler 
-    CCP6CON1Lbits.CCSEL = 0;        //Output compare
-    CCP6CON1Lbits.CCPON = 1;        //Enable  
+    MCCP6_COMPARE_Start();
+    ismccp6Enabled = true;
 }
 
-void LED3_BLUE_Off(void)
+void LED3_BLUE_Off(void) 
 {
-	LED3_BLUE_TRIS = 0;
-	LED3_BLUE_LAT = 0;
-
-    CCP6CON1Lbits.CCPON = 0;        //Disable 
+    MCCP6_COMPARE_Stop();
+    ismccp6Enabled = false;
 }
 
 void LED3_BLUE_Toggle(void)
 {
-	if(CCP6CON1Lbits.CCPON)
-    {
+    if (ismccp6Enabled == true) {
         LED3_BLUE_Off();
-    }
-    else
-    {
+    } else {
         LED3_BLUE_On();
     }
 }
 
-void LED3_BLUE_SetIntensity(uint16_t new_intensity)
-{  
-    //Convert 16-bit to 10-bit to reduce flicker/jitter
-    new_intensity >>= 6;
-    
-    CCP6RBL = new_intensity;
-    
-    current_intensity = new_intensity;
-
-    if(CCP6TMRL > new_intensity)
-    {
-        CCP6TMRL = 0;
-    }
+void LED3_BLUE_SetIntensity(uint16_t new_intensity) 
+{
+    MCCP6_COMPARE_DualCompareValueSet(0x0, new_intensity);
 }
 #endif

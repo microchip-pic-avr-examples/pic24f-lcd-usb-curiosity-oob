@@ -1,28 +1,61 @@
-/*******************************************************************************
-Copyright 2016 Microchip Technology Inc. (www.microchip.com)
+/**
+  Generated main.c file from MPLAB Code Configurator
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+  @Company
+    Microchip Technology Inc.
 
-    http://www.apache.org/licenses/LICENSE-2.0
+  @File Name
+    main.c
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*******************************************************************************/
+  @Summary
+    This is the generated main.c using PIC24 / dsPIC33 / PIC32MM MCUs.
+
+  @Description
+    This source file provides main entry point for system initialization and application code development.
+    Generation Information :
+        Product Revision  :  PIC24 / dsPIC33 / PIC32MM MCUs - 1.165.1
+        Device            :  PIC24FJ128GL306
+    The generated drivers are tested against the following:
+        Compiler          :  XC16 v1.41
+        MPLAB 	          :  MPLAB X v5.30
+*/
+
+/*
+    (c) 2020 Microchip Technology Inc. and its subsidiaries. You may use this
+    software and any derivatives exclusively with Microchip products.
+
+    THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER
+    EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED
+    WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A
+    PARTICULAR PURPOSE, OR ITS INTERACTION WITH MICROCHIP PRODUCTS, COMBINATION
+    WITH ANY OTHER PRODUCTS, OR USE IN ANY APPLICATION.
+
+    IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE,
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND
+    WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS
+    BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE
+    FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
+    ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
+    THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+
+    MICROCHIP PROVIDES THIS SOFTWARE CONDITIONALLY UPON YOUR ACCEPTANCE OF THESE
+    TERMS.
+*/
+
+/**
+  Section: Included Files
+*/
 
 #include <stddef.h>
 
-#include "power.h"
-#include "usb_operational_mode.h"
-#include "battery_operational_mode.h"
+#include "application/usb_operational_mode.h"
+#include "application/battery_operational_mode.h"
 #include "mcc_generated_files/rtcc.h"
-#include "io_pins.h"
-#include "lcd1.h"
-#include "build_time.h"
+#include "bsp/power.h"
+#include "application/lcd_demo.h"
+#include "bsp/build_time.h"
+#include "mcc_generated_files/system.h"
+#include "mcc_generated_files/lcd_segments.h"
 
 static void SwitchOperatoinalMode(enum POWER_SOURCE new_source);
 
@@ -51,12 +84,9 @@ int main(void)
     
     enum POWER_SOURCE new_source;
     
-    POWER_Initialize();
-    IO_PINS_Initialize();
-    LCD1_Initialize();
-
-    RTCC_Initialize();
+    SYSTEM_Initialize();
     
+    LCD_MICROCHIP1_On();
     BUILDTIME_Get(&build_time);
     RTCC_TimeSet(&build_time);
     

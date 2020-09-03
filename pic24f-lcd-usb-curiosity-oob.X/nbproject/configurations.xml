@@ -8,12 +8,16 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f3" displayName="Application" projectFiles="true">
+        <itemPath>application/battery_operational_mode.h</itemPath>
+        <itemPath>application/lcd_demo.h</itemPath>
+        <itemPath>application/operational_mode.h</itemPath>
+        <itemPath>application/usb_operational_mode.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="f2"
                      displayName="Board Support Package (BSP)"
                      projectFiles="true">
-        <itemPath>bsp/adc.h</itemPath>
         <itemPath>bsp/buttons.h</itemPath>
-        <itemPath>io_pins.h</itemPath>
         <itemPath>bsp/led1.h</itemPath>
         <itemPath>bsp/led2.h</itemPath>
         <itemPath>bsp/led3_blue.h</itemPath>
@@ -21,11 +25,9 @@
         <itemPath>bsp/led3_red.h</itemPath>
         <itemPath>bsp/rgb_led3.h</itemPath>
         <itemPath>bsp/timer_1ms.h</itemPath>
-        <itemPath>power.h</itemPath>
-        <itemPath>bsp/lcd1.h</itemPath>
-        <itemPath>bsp/lcd1_16seg.h</itemPath>
-        <itemPath>bsp/lcd1_7seg.h</itemPath>
-        <itemPath>bsp/lcd1_segments.h</itemPath>
+        <itemPath>bsp/build_time.h</itemPath>
+        <itemPath>bsp/power.h</itemPath>
+        <itemPath>bsp/tc77.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="MCC Generated Files" projectFiles="true">
         <logicalFolder name="usb" displayName="usb" projectFiles="true">
@@ -39,16 +41,25 @@
           <itemPath>mcc_generated_files/usb/usb_hal.h</itemPath>
           <itemPath>mcc_generated_files/usb/usb_hal_pic24f.h</itemPath>
         </logicalFolder>
-        <itemPath>mcc_generated_files/spi1_driver.h</itemPath>
-        <itemPath>mcc_generated_files/spi1_types.h</itemPath>
         <itemPath>mcc_generated_files/rtcc.h</itemPath>
+        <itemPath>mcc_generated_files/adc1.h</itemPath>
+        <itemPath>mcc_generated_files/adc_module_features.h</itemPath>
+        <itemPath>mcc_generated_files/clock.h</itemPath>
+        <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
+        <itemPath>mcc_generated_files/lcd.h</itemPath>
+        <itemPath>mcc_generated_files/lcd_16seg.h</itemPath>
+        <itemPath>mcc_generated_files/lcd_7seg.h</itemPath>
+        <itemPath>mcc_generated_files/lcd_segments.h</itemPath>
+        <itemPath>mcc_generated_files/mcc.h</itemPath>
+        <itemPath>mcc_generated_files/mccp4_compare.h</itemPath>
+        <itemPath>mcc_generated_files/mccp5_compare.h</itemPath>
+        <itemPath>mcc_generated_files/mccp6_compare.h</itemPath>
+        <itemPath>mcc_generated_files/pin_manager.h</itemPath>
+        <itemPath>mcc_generated_files/spi1.h</itemPath>
+        <itemPath>mcc_generated_files/system.h</itemPath>
+        <itemPath>mcc_generated_files/tmr3.h</itemPath>
+        <itemPath>mcc_generated_files/traps.h</itemPath>
       </logicalFolder>
-      <itemPath>operational_mode.h</itemPath>
-      <itemPath>usb_operational_mode.h</itemPath>
-      <itemPath>tc77.h</itemPath>
-      <itemPath>battery_operational_mode.h</itemPath>
-      <itemPath>build_time.h</itemPath>
-      <itemPath>lcd_demo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -57,22 +68,23 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f3" displayName="Application" projectFiles="true">
+        <itemPath>application/battery_operational_mode.c</itemPath>
+        <itemPath>application/lcd_demo.c</itemPath>
+        <itemPath>application/usb_operational_mode.c</itemPath>
+      </logicalFolder>
       <logicalFolder name="f2"
                      displayName="Board Support Package (BSP)"
                      projectFiles="true">
-        <itemPath>bsp/adc.c</itemPath>
         <itemPath>bsp/buttons.c</itemPath>
-        <itemPath>io_pins.c</itemPath>
         <itemPath>bsp/led3_blue.c</itemPath>
         <itemPath>bsp/led3_green.c</itemPath>
         <itemPath>bsp/led3_red.c</itemPath>
-        <itemPath>power.c</itemPath>
         <itemPath>bsp/rgb_led3.c</itemPath>
         <itemPath>bsp/timer_1ms.c</itemPath>
-        <itemPath>system.c</itemPath>
-        <itemPath>bsp/lcd1.c</itemPath>
-        <itemPath>bsp/lcd1_16seg.c</itemPath>
-        <itemPath>bsp/lcd1_7seg.c</itemPath>
+        <itemPath>bsp/tc77.c</itemPath>
+        <itemPath>bsp/power.c</itemPath>
+        <itemPath>bsp/build_time.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="MCC Generated Files" projectFiles="true">
         <logicalFolder name="usb" displayName="usb" projectFiles="true">
@@ -82,21 +94,31 @@
           <itemPath>mcc_generated_files/usb/usb_device_events.c</itemPath>
           <itemPath>mcc_generated_files/usb/usb_hal_16bit.c</itemPath>
         </logicalFolder>
-        <itemPath>mcc_generated_files/spi1_driver.c</itemPath>
         <itemPath>mcc_generated_files/rtcc.c</itemPath>
+        <itemPath>mcc_generated_files/adc1.c</itemPath>
+        <itemPath>mcc_generated_files/clock.c</itemPath>
+        <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
+        <itemPath>mcc_generated_files/lcd.c</itemPath>
+        <itemPath>mcc_generated_files/lcd_16seg.c</itemPath>
+        <itemPath>mcc_generated_files/lcd_7seg.c</itemPath>
+        <itemPath>mcc_generated_files/mcc.c</itemPath>
+        <itemPath>mcc_generated_files/mccp4_compare.c</itemPath>
+        <itemPath>mcc_generated_files/mccp5_compare.c</itemPath>
+        <itemPath>mcc_generated_files/mccp6_compare.c</itemPath>
+        <itemPath>mcc_generated_files/pin_manager.c</itemPath>
+        <itemPath>mcc_generated_files/spi1.c</itemPath>
+        <itemPath>mcc_generated_files/system.c</itemPath>
+        <itemPath>mcc_generated_files/tmr3.c</itemPath>
+        <itemPath>mcc_generated_files/traps.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>usb_operational_mode.c</itemPath>
-      <itemPath>tc77.c</itemPath>
-      <itemPath>battery_operational_mode.c</itemPath>
-      <itemPath>build_time.c</itemPath>
-      <itemPath>lcd_demo.c</itemPath>
       <itemPath>printf_usb_cdc.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>MyConfig.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
