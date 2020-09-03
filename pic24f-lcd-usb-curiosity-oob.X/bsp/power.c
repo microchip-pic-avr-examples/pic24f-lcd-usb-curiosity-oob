@@ -30,6 +30,8 @@ typedef enum
     ADC_CHANNEL_VDD = 30
 } ADC_POWER_CHANNEL;
 
+static uint16_t getBandGapChannelOutput(ADC1_CHANNEL channel);
+
 
 enum POWER_SOURCE POWER_GetSource(void)
 {
@@ -47,33 +49,25 @@ double POWER_GetVddVoltage(void)
     uint16_t i=0;
     uint16_t band_gap;
     
-    ADC1_Enable();
     
-    ADC1_ChannelSelect(CHANNEL_AVDD);
-    //Start Sampling
-    ADC1_SoftwareTriggerEnable();
-
-    for(i=0;i<65535;i++)
-    {
-        //Do Nothing
-    }
-    ADC1_SoftwareTriggerDisable();
-    //Check if the ADC conversion is completed
-    while(!ADC1_IsConversionComplete(CHANNEL_AVDD))
-    {
-        //Do Nothing
-    }
-    vdd = ADC1_ConversionResultGet(CHANNEL_AVDD);// VDD Channel =30,Channel Band Gap = 28,Channel 16 = 16
-
-    ADC1_Disable();
-   
+    vdd = getBandGapChannelOutput(CHANNEL_AVDD);
     while(HLVDCONbits.BGVST == 0)
     {
     }
+    // Get the BandGap Channel Voltage
+    band_gap = getBandGapChannelOutput(CHANNEL_VBG);
     
+    
+    return ( (BANDGAP_TYPICAL_VOLTAGE * vdd) / band_gap );
+}
+
+static uint16_t getBandGapChannelOutput(ADC1_CHANNEL channel) 
+{
+    uint16_t channelOuput = 0;
+    uint16_t i=0;
     ADC1_Enable();
     
-    ADC1_ChannelSelect(CHANNEL_VBG);
+    ADC1_ChannelSelect(channel);
     //Start Sampling
     ADC1_SoftwareTriggerEnable();
 
@@ -83,14 +77,13 @@ double POWER_GetVddVoltage(void)
     }
     ADC1_SoftwareTriggerDisable();
     //Check if the ADC conversion is completed
-    while(!ADC1_IsConversionComplete(CHANNEL_VBG))
+    while(!ADC1_IsConversionComplete(channel))
     {
         //Do Nothing
     }
-    // Get the BandGap Channel Voltage
-    band_gap = ADC1_ConversionResultGet(CHANNEL_VBG);
-    
-    return ( (BANDGAP_TYPICAL_VOLTAGE * vdd) / band_gap );
+    channelOuput = ADC1_ConversionResultGet(channel);// VDD Channel =30,Channel Band Gap = 28,Channel 16 = 16
+    ADC1_Disable();
+    return channelOuput;
 }
 
 double POWER_GetBatteryVoltage(void)
