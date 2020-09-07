@@ -46,7 +46,6 @@ enum POWER_SOURCE POWER_GetSource(void)
 double POWER_GetVddVoltage(void)
 {
     uint16_t vdd;
-    uint16_t i=0;
     uint16_t band_gap;
     vdd = getBandGapChannelOutput(CHANNEL_AVDD);
     while(HLVDCONbits.BGVST == 0)
