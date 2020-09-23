@@ -4,7 +4,7 @@
 
 ## Summary
 
-This is the demo software which runs on PIC24F LCD USB Curiosity Development Board (DM240017). The PIC24F LCD USB Curiosity Development Board is a cost-effective, fully integrated development platform targeted at first-time users, Makers, and those seeking a feature-rich rapid prototyping board. Refer to https://www.microchip.com/pic24flcdcuriosity for additional details about the board.
+This is the demo software which runs on PIC24F LCD USB Curiosity Development Board (DM240018). The PIC24F LCD USB Curiosity Development Board is a cost-effective, fully integrated development platform targeted at first-time users, Makers, and those seeking a feature-rich rapid prototyping board. Refer to https://www.microchip.com/pic24flcdusbcuriosity for additional details about the board.
 
 
 ## Related Documentation
@@ -15,7 +15,7 @@ This is the demo software which runs on PIC24F LCD USB Curiosity Development Boa
 
 ## Hardware Used 
 
-- PIC24F LCD USB Curiosity Development Board (https://www.microchip.com/DM240017) 
+- PIC24F LCD USB Curiosity Development Board (https://www.microchip.com/pic24flcdusbcuriosity) 
 
 ## Software Used 
 
@@ -60,4 +60,4 @@ All of the other functionality from the USB mode is disabled.
 
 To measure the power consumption of the board, a meter can be placed between the pins 2 and 3 of jumper J9 (that goes to the battery housing.  To measure the current of the CPU, cut the trace on the bottom of the board under jumper J1 and place a meter between the two pins.  
 
-![image](images/PIC24FLCDUSBCuriosity.jpg)
+![image](images/pic24f_lcdusbcuriosity.jpg)
