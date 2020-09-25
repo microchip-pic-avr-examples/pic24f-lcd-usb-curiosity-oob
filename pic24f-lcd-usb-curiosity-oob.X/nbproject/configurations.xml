@@ -2,7 +2,6 @@
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
     <logicalFolder name="f1" displayName="Documentation" projectFiles="true">
-      <itemPath>bsp/hardware.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -131,7 +130,7 @@
         <targetDevice>PIC24FJ512GU410</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool></platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>1.60</languageToolchainVersion>
         <platform>3</platform>

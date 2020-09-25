@@ -103,30 +103,12 @@ void LCD_ModeSet(enum LCD_MODE mode)
                     LCDACTRLbits.ELCDEN = 0;//Disable LCD enhanced Mode
                     break;
 
-        //Blink All Pixels in Primary Memory            
-        case LCD_BLINK_PRIMARY_MEMORY:
-                    LCDACTRLbits.BLINKMODE = 0x0002;//Enable Blink Mode with all pixels
-                    LCDASTATbits.DMSEL = 0x0000;//Primary memory as Display Memory 
-                    LCDACTRLbits.BLINKFCS= 0x0001;
-                    LCDFC1 = 0x0002;
-                    LCDACTRLbits.ELCDEN = 1;//Enable LCD enhanced Mode
-                    break;
-
-        //Blink All Pixels in Secondary Memory
-        case LCD_BLINK_SECONDARY_MEMORY_2:
-                    LCDACTRLbits.BLINKMODE = 0x0002;//Enable Blink Mode with all pixels
-                    LCDASTATbits.DMSEL = 0x0001;//Secondary memory as Display Memory 
-                    LCDACTRLbits.BLINKFCS= 0x0001;
-                    LCDFC1 = 0x0002;
-                    LCDACTRLbits.ELCDEN = 1;//Enable LCD enhanced Mode
-                    break;
-
         //Alternate With Continuous Switch Over 
         case LCD_MODE_ALTERNATE:
                     LCDACTRLbits.BLINKMODE = 0x0000;//Disable Blink Mode
                     LCDASTATbits.DMSEL = 0x0003;//Continuous switch over between primary and secondary memory
                     LCDACTRLbits.SMFCS = 0x0001;
-                    LCDFC0 = 0x0002;
+                    LCDFC0 = 0x0988;
                     LCDACTRLbits.ELCDEN = 1;//Enable LCD enhanced Mode
                     break;
 
@@ -135,7 +117,7 @@ void LCD_ModeSet(enum LCD_MODE mode)
                     LCDACTRLbits.BLINKMODE = 0x0001;//Enable Blink Mode with selected pixels
                     LCDASTATbits.DMSEL = 0x0000;//Primary memory as Display Memory 
                     LCDACTRLbits.BLINKFCS= 0x0001;
-                    LCDFC1 = 0x0002;
+                    LCDFC1 = 0x03d0;
                     LCDACTRLbits.ELCDEN = 1;//Enable LCD enhanced Mode
                     break;
 

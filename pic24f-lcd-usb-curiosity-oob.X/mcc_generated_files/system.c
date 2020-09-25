@@ -120,23 +120,23 @@
 #include "interrupt_manager.h"
 #include "traps.h"
 #include "mccp6_compare.h"
-#include "lcd.h"
 #include "mccp5_compare.h"
 #include "mccp4_compare.h"
-#include "adc1.h"
 #include "rtcc.h"
 #include "tmr3.h"
+#include "lcd.h"
+#include "adc1.h"
 #include "spi1.h"
 
 void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
-    CLOCK_Initialize();
     INTERRUPT_Initialize();
+    CLOCK_Initialize();
     MCCP4_COMPARE_Initialize();
     MCCP6_COMPARE_Initialize();
-    LCD_Initialize();
     MCCP5_COMPARE_Initialize();
+    LCD_Initialize();
     SPI1_Initialize();
     ADC1_Initialize();
     TMR3_Initialize();

@@ -13,12 +13,12 @@
          <string>class com.microchip.mcc.mcu16.modules.rtcc.RTCC</string>
       </entry>
       <entry>
-         <string>WATCHDOG</string>
-         <string>class com.microchip.mcc.mcu16.systemManager.wdt.Wdt</string>
-      </entry>
-      <entry>
          <string>Pin Module</string>
          <string>class com.microchip.mcc.mcu16.pinManager.PinManager</string>
+      </entry>
+      <entry>
+         <string>WATCHDOG</string>
+         <string>class com.microchip.mcc.mcu16.systemManager.wdt.Wdt</string>
       </entry>
       <entry>
          <string>DMT</string>
@@ -33,12 +33,12 @@
          <string>class com.microchip.mcc.mcu16.systemManager.icd.Icd</string>
       </entry>
       <entry>
-         <string>Interrupt Module</string>
-         <string>class com.microchip.mcc.mcu16.interruptManager.InterruptManager</string>
-      </entry>
-      <entry>
          <string>LCD</string>
          <string>class com.microchip.mcc.softwareabstraction.modules.lcd.LCD</string>
+      </entry>
+      <entry>
+         <string>Interrupt Module</string>
+         <string>class com.microchip.mcc.mcu16.interruptManager.InterruptManager</string>
       </entry>
       <entry>
          <string>MCCP4</string>
@@ -49,12 +49,12 @@
          <string>class com.microchip.mcc.mcu16.modules.mccp.MCCP</string>
       </entry>
       <entry>
-         <string>ADC1</string>
-         <string>class com.microchip.mcc.mcu16.modules.adc.ADC</string>
-      </entry>
-      <entry>
          <string>MCCP6</string>
          <string>class com.microchip.mcc.mcu16.modules.mccp.MCCP</string>
+      </entry>
+      <entry>
+         <string>ADC1</string>
+         <string>class com.microchip.mcc.mcu16.modules.adc.ADC</string>
       </entry>
       <entry>
          <string>System Module</string>
@@ -1826,16 +1826,16 @@
          <value>192</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TECS" alias="T3CK"/>
+         <value>1</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC1" registerAlias="ADI" settingAlias="context"/>
          <value>OFF</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC1" registerAlias="ADCSSH" settingAlias="CSS22"/>
          <value>disabled</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TECS" alias="T3CK"/>
-         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="MCCP4" name="MCCPPinMapperHider"/>
@@ -5758,12 +5758,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA27" settingAlias="S53C6" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="localClockFreq"/>
          <value>4000000</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA27" settingAlias="S53C6" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA7" settingAlias="S61C1" alias="disabled"/>
@@ -5946,12 +5946,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S20C0" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM202"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S20C0" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM205"/>
@@ -5966,12 +5966,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPSTATL" settingAlias="TRCLR" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM206"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPSTATL" settingAlias="TRCLR" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCFB" settingAlias="IOCFB6" alias="disabled"/>
@@ -6150,12 +6150,12 @@
          <value>Tri-state</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON3H" settingAlias="PSSBDF"/>
-         <value>Tri-state</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM250"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON3H" settingAlias="PSSBDF"/>
+         <value>Tri-state</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE2" settingAlias="SE46" alias="disabled"/>
@@ -6174,12 +6174,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA18" settingAlias="S32C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM254"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA18" settingAlias="S32C4"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNPUE" settingAlias="CNPUE1" alias="disabled"/>
@@ -6194,12 +6194,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA7" settingAlias="S51C1"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM253"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA7" settingAlias="S51C1"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATG" settingAlias="LATG7" alias="set"/>
@@ -6270,12 +6270,12 @@
          <value>13</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S21C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM258"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S21C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCHS" settingAlias="CH0SB" alias="AN16"/>
@@ -6294,12 +6294,12 @@
          <value>18</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA23"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM259"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA23"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCHS" settingAlias="CH0SB" alias="AN17"/>
@@ -6346,12 +6346,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S62C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM242"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S62C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNPUC" settingAlias="CNPUC14" alias="enabled"/>
@@ -6398,12 +6398,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA14" settingAlias="S32C3" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM247"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA14" settingAlias="S32C3" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCFF" settingAlias="IOCFF2" alias="enabled"/>
@@ -6442,12 +6442,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA0" settingAlias="S07C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM232"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA0" settingAlias="S07C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM231"/>
@@ -6518,12 +6518,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA25"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM235"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA25"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM238"/>
@@ -6614,12 +6614,12 @@
          <value>12</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA24"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM223"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA24"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCHS" settingAlias="CH0SA" alias="AN15"/>
@@ -6674,12 +6674,12 @@
          <value>18</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA19" settingAlias="S51C4" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM229"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA19" settingAlias="S51C4" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM228"/>
@@ -6690,12 +6690,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA27"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM291"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA27"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNPUE" settingAlias="CNPUE0" alias="enabled"/>
@@ -6726,12 +6726,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA11" settingAlias="S49C2"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM298"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA11" settingAlias="S49C2"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM297"/>
@@ -6770,12 +6770,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE2" settingAlias="SE45" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM299"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE2" settingAlias="SE45" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCCON" settingAlias="POSCEN" alias="disabled"/>
@@ -6798,11 +6798,15 @@
          <value>19</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM280"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA28" settingAlias="S02C7" alias="enabled"/>
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM280"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM283"/>
          <value/>
       </entry>
       <entry>
@@ -6810,16 +6814,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM283"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM282"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S42C1" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM282"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCFB" settingAlias="IOCFB6" alias="enabled"/>
@@ -6838,12 +6838,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA26"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM287"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA26"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM286"/>
@@ -6914,12 +6914,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA14" settingAlias="S42C3"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM272"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA14" settingAlias="S42C3"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM271"/>
@@ -6942,12 +6942,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA20" settingAlias="S00C5" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM275"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA20" settingAlias="S00C5" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA31" settingAlias="S62C7" alias="disabled"/>
@@ -7014,12 +7014,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S55C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM278"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S55C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM277"/>
@@ -7086,12 +7086,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA29" settingAlias="S31C7" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM264"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA29" settingAlias="S31C7" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPUE" settingAlias="IOCPUE5" alias="enabled"/>
@@ -7126,12 +7126,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE2" settingAlias="SE44" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM267"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE2" settingAlias="SE44" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="RTCC" registerAlias="RTCCON3L" settingAlias="PWCSTAB"/>
@@ -7706,12 +7706,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON2H" settingAlias="AUXOUT" alias="Disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPPRL" settingAlias="PRL"/>
          <value>16383</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON2H" settingAlias="AUXOUT" alias="Disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPPRL" settingAlias="PRL"/>
@@ -8838,12 +8838,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA13" settingAlias="S26C3"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM130"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA13" settingAlias="S26C3"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM133"/>
@@ -8926,12 +8926,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S45C1" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM136"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S45C1" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM139"/>
@@ -9034,12 +9034,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDASTAT" settingAlias="SMCLEAR" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM124"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDASTAT" settingAlias="SMCLEAR" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM123"/>
@@ -9050,12 +9050,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON3H" settingAlias="PSSBDF" alias="Tri-state"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM125"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON3H" settingAlias="PSSBDF" alias="Tri-state"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM128"/>
@@ -9162,12 +9162,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSLP" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM112"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSLP" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="REFOPinsOutput"/>
@@ -9270,12 +9270,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCON2" settingAlias="SMPI" alias="Generates interrupt after completion of every 31th sample/conversion operation"/>
-         <value>30</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TON"/>
          <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCON2" settingAlias="SMPI" alias="Generates interrupt after completion of every 31th sample/conversion operation"/>
+         <value>30</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RD3"/>
@@ -9334,16 +9334,16 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM102"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDCON" settingAlias="CS" alias="SOSC"/>
          <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA2" settingAlias="S36C0" alias="disabled"/>
          <value>0</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM102"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM101"/>
@@ -9406,12 +9406,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S23C7"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM176"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S23C7"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RH0"/>
@@ -9490,12 +9490,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S62C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM164"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S62C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPUA" settingAlias="IOCPUA2" alias="disabled"/>
@@ -9510,12 +9510,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA16" settingAlias="S08C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM165"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA16" settingAlias="S08C4"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISA" settingAlias="TRISA14"/>
@@ -9610,16 +9610,16 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM150"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S00C6"/>
          <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA1" settingAlias="S21C0" alias="disabled"/>
          <value>0</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM150"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI1" registerAlias="SPICON1H" settingAlias="FRMCNT"/>
@@ -9690,28 +9690,28 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON1L" settingAlias="CCPSIDL"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM156"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON1L" settingAlias="CCPSIDL"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCPUD" settingAlias="IOCPUD12"/>
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSIDL"/>
-         <value>disabled</value>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM159"/>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPCON1H" settingAlias="IOPS" alias="15th Time Base Period Match"/>
          <value>14</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM159"/>
-         <value/>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSIDL"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP6" registerAlias="CCPCON1L" settingAlias="CCPSIDL"/>
@@ -10018,16 +10018,16 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM198"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA7" settingAlias="S53C1" alias="enabled"/>
          <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA29" settingAlias="S20C7" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM198"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S22C1" alias="disabled"/>
@@ -10042,12 +10042,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA9" settingAlias="S31C2" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM190"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA9" settingAlias="S31C2" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCPUD" settingAlias="IOCPUD14"/>
@@ -10098,12 +10098,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDREG" settingAlias="CPEN"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM188"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDREG" settingAlias="CPEN"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM187"/>
@@ -10158,12 +10158,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S18C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM189"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA1" settingAlias="S18C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPUA" settingAlias="IOCPUA1" alias="enabled"/>
@@ -11158,12 +11158,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA18" settingAlias="S40C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM93"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA18" settingAlias="S40C4"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM94"/>
@@ -11506,12 +11506,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC1" registerAlias="ADCSSL" settingAlias="CSS3"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="tickerFactor"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC1" registerAlias="ADCSSL" settingAlias="CSS3"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="INTERNAL OSCILLATOR" registerAlias="PMD8" settingAlias="U6MD"/>
@@ -11838,12 +11838,12 @@
          <value>LCD_DOT6_SYM14::dot:432.0:151.0:-1.0:-1.0:62_7</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA0" settingAlias="S15C0" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM15"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA0" settingAlias="S15C0" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM16"/>
@@ -11930,12 +11930,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON2L" settingAlias="PWMRSEN" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM48"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON2L" settingAlias="PWMRSEN" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM49"/>
@@ -12034,12 +12034,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA12" settingAlias="S05C3" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM36"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA12" settingAlias="S05C3" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM37"/>
@@ -12086,11 +12086,15 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM67"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA2" settingAlias="S42C0"/>
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM67"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM60"/>
          <value/>
       </entry>
       <entry>
@@ -12098,7 +12102,7 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM60"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM61"/>
          <value/>
       </entry>
       <entry>
@@ -12106,7 +12110,7 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM61"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM62"/>
          <value/>
       </entry>
       <entry>
@@ -12116,10 +12120,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA28" settingAlias="S12C7" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM62"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM63"/>
@@ -12226,12 +12226,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON1L" settingAlias="CCSEL"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM53"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON1L" settingAlias="CCSEL"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM54"/>
@@ -12246,20 +12246,20 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM56"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCSEL"/>
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM56"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM50"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA23" settingAlias="S59C5" alias="disabled"/>
          <value>0</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM50"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCPDD" settingAlias="IOCPDD1"/>
@@ -12298,12 +12298,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA16" settingAlias="S00C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM59"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA16" settingAlias="S00C4"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA11" settingAlias="S63C2"/>
@@ -12354,36 +12354,36 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA7" settingAlias="S51C1"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM89"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA7" settingAlias="S51C1"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI1" registerAlias="SPIIMSKH" settingAlias="RXMSK"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDASTAT" settingAlias="DMSEL" alias="Alternates Between Primary and Secondary Memory"/>
-         <value>2</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM82"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDASTAT" settingAlias="DMSEL" alias="Alternates Between Primary and Secondary Memory"/>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM83"/>
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S51C0" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM84"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S51C0" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM85"/>
@@ -12482,12 +12482,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S40C1" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM74"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S40C1" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="RPINR25" settingAlias="CLCINAR"/>
@@ -12886,12 +12886,12 @@
          <value>unlocked</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA13" settingAlias="S26C3" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR3" registerAlias="PR"/>
          <value>499</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA13" settingAlias="S26C3" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPUA" settingAlias="CNPUA4"/>
@@ -12910,6 +12910,10 @@
          <value>10</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ICM5R%aux2"/>
+         <value>%DESELECT%</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA21" settingAlias="S23C5"/>
          <value>disabled</value>
       </entry>
@@ -12924,10 +12928,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP6" registerAlias="CCPCON1H" settingAlias="SYNC" alias="INT2"/>
          <value>11</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ICM5R%aux1"/>
-         <value>%DESELECT%</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP6" registerAlias="CCPCON1H" settingAlias="SYNC" alias="INT3"/>
@@ -12986,12 +12986,12 @@
          <value>LCD_DOT4_SYM09::dot:333.0:147.0:-1.0:-1.0:59_7</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA9" settingAlias="S22C2" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM02"/>
          <value>CHAR3_SYM02::seven_segment:193.0:52.0:-1.0:-1.0:50_4:58_4:58_6:58_7:50_6:50_5:58_5</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA9" settingAlias="S22C2" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM03"/>
@@ -15254,12 +15254,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="DISSCK"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="MCCP6" registerAlias="CCPPRL"/>
          <value>16383</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="DISSCK"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCFG" settingAlias="IOCFG15" alias="enabled"/>
@@ -17366,12 +17366,12 @@
          <value>enabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA7" settingAlias="S51C1" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TCKPS" alias="1:256"/>
          <value>3</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA7" settingAlias="S51C1" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISD" settingAlias="TRISD14" alias="output"/>
@@ -17682,6 +17682,10 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="requestedPeriod"/>
+         <value>0.001</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA18" settingAlias="S34C4" alias="disabled"/>
          <value>0</value>
       </entry>
@@ -17692,10 +17696,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDACTRL" settingAlias="SMFCS" alias="Continue with Frame Counter 1 (FC1)"/>
          <value>2</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="requestedPeriod"/>
-         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="customNameUserSet RB15"/>
@@ -17762,12 +17762,12 @@
          <value>12288</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S10C6" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR3" name="prescaleDivisor"/>
          <value>8</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S10C6" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCFD" settingAlias="IOCFD13"/>
@@ -18698,12 +18698,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSIDL" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="MCCP4" name="LocalClockKey"/>
          <value>4000000</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="CCPSIDL" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPUC" settingAlias="IOCPUC12" alias="disabled"/>
@@ -22290,6 +22290,10 @@
          <value>2</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TGATE"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA9" settingAlias="S29C2"/>
          <value>disabled</value>
       </entry>
@@ -22300,10 +22304,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA20" settingAlias="S13C5" alias="disabled"/>
          <value>0</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TGATE"/>
-         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S02C2"/>
@@ -22402,12 +22402,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA21" settingAlias="S26C5" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TGATE" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA21" settingAlias="S26C5" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPCON2H" settingAlias="OCBEN" alias="enabled"/>
@@ -26578,12 +26578,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP6" registerAlias="CCPCON3H" settingAlias="POLACE" alias="disabled"/>
-         <value>0</value>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ICM4R%aux1"/>
+         <value>%DESELECT%</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ICM4R%aux2"/>
-         <value>%DESELECT%</value>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP6" registerAlias="CCPCON3H" settingAlias="POLACE" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S14C2"/>
@@ -27186,12 +27186,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA18" settingAlias="S46C4" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR3" registerAlias="PR" settingAlias="PR"/>
          <value>499</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA18" settingAlias="S46C4" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA10" settingAlias="S45C2"/>
@@ -27790,12 +27790,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA23" settingAlias="S57C5" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="CLOCK_SOURCE"/>
          <value>FRC</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA23" settingAlias="S57C5" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPDD" settingAlias="CNPDD7"/>
@@ -28426,12 +28426,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON2H" settingAlias="OENSYNC"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPCON1L" settingAlias="CCPSIDL" alias="disabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON2H" settingAlias="OENSYNC"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP6" registerAlias="CCPCON2H" settingAlias="OENSYNC"/>
@@ -28443,40 +28443,22 @@
   &quot;keyData&quot;: &quot;dynamicDisplay&quot;,
   &quot;tableParamsList&quot;: [
     {
-      &quot;rowIndex&quot;: 4,
-      &quot;displayMode&quot;: &quot;Blink Selected Pixels In Secondary Memory&quot;,
-      &quot;customName&quot;: &quot;LCD_COLON_BLINK&quot;,
-      &quot;minRange&quot;: &quot;0.003&quot;,
-      &quot;maxRange&quot;: &quot;67&quot;,
-      &quot;requestedRate&quot;: &quot;0.003&quot;,
-      &quot;acheivableRate&quot;: &quot;0.003&quot;
-    },
-    {
       &quot;rowIndex&quot;: 1,
-      &quot;displayMode&quot;: &quot;Blink All Pixels In Primary Memory&quot;,
-      &quot;customName&quot;: &quot;LCD_BLINK_PRIMARY_MEMORY&quot;,
-      &quot;minRange&quot;: &quot;0.003&quot;,
-      &quot;maxRange&quot;: &quot;67&quot;,
-      &quot;requestedRate&quot;: &quot;0.003&quot;,
-      &quot;acheivableRate&quot;: &quot;0.003&quot;
-    },
-    {
-      &quot;rowIndex&quot;: 3,
       &quot;displayMode&quot;: &quot;Alternate With Continuous Switchover&quot;,
       &quot;customName&quot;: &quot;LCD_MODE_ALTERNATE&quot;,
       &quot;minRange&quot;: &quot;0.003&quot;,
       &quot;maxRange&quot;: &quot;67&quot;,
-      &quot;requestedRate&quot;: &quot;0.003&quot;,
-      &quot;acheivableRate&quot;: &quot;0.003&quot;
+      &quot;requestedRate&quot;: &quot;2.5&quot;,
+      &quot;acheivableRate&quot;: &quot;2.500&quot;
     },
     {
       &quot;rowIndex&quot;: 2,
-      &quot;displayMode&quot;: &quot;Blink All Pixels In Secondary Memory&quot;,
-      &quot;customName&quot;: &quot;LCD_BLINK_SECONDARY_MEMORY_2&quot;,
+      &quot;displayMode&quot;: &quot;Blink Selected Pixels In Secondary Memory&quot;,
+      &quot;customName&quot;: &quot;LCD_COLON_BLINK&quot;,
       &quot;minRange&quot;: &quot;0.003&quot;,
       &quot;maxRange&quot;: &quot;67&quot;,
-      &quot;requestedRate&quot;: &quot;0.003&quot;,
-      &quot;acheivableRate&quot;: &quot;0.003&quot;
+      &quot;requestedRate&quot;: &quot;1&quot;,
+      &quot;acheivableRate&quot;: &quot;1.000&quot;
     }
   ]
 }</value>
@@ -29514,12 +29496,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1H" settingAlias="ALTSYNC"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM417"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1H" settingAlias="ALTSYNC"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S32C1" alias="disabled"/>
@@ -29726,12 +29708,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA21" settingAlias="S22C5"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM401"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA21" settingAlias="S22C5"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ioc RB4"/>
@@ -29742,12 +29724,12 @@
          <value>16191</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S04C6"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM400"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S04C6"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ioc RB1"/>
@@ -29762,20 +29744,20 @@
          <value>none</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM402"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA14" settingAlias="S46C3"/>
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM402"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM405"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA24" settingAlias="S05C6" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM405"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="ioc RB0"/>
@@ -30038,12 +30020,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA28" settingAlias="S12C7" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM456"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA28" settingAlias="S12C7" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC1" registerAlias="ADCHITL"/>
@@ -30054,12 +30036,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPSTATL" settingAlias="ICBNE" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM455"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPSTATL" settingAlias="ICBNE" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM458"/>
@@ -30162,20 +30144,20 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S40C1" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM449"/>
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA18" settingAlias="S43C4" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA6" settingAlias="S40C1" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM448"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA18" settingAlias="S43C4" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCFB" settingAlias="IOCFB14"/>
@@ -30226,12 +30208,12 @@
          <value>63</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S19C7" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM433"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S19C7" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM436"/>
@@ -30330,6 +30312,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM421"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA31" settingAlias="S52C7"/>
          <value>disabled</value>
       </entry>
@@ -30338,16 +30324,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM421"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM420"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA12" settingAlias="S08C3" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM420"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM423"/>
@@ -30370,12 +30352,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S00C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM426"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S00C4"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM490"/>
@@ -30394,16 +30376,20 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA17" settingAlias="S27C4"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM492"/>
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA17" settingAlias="S27C4"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP6" registerAlias="CCPCON1L" settingAlias="MOD" alias="Edge Detect"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM491"/>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDREF" settingAlias="LRLAT" alias="A Power mode for 5 clocks and B Power mode for 11 clocks"/>
@@ -30412,10 +30398,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA28" settingAlias="S04C7" alias="disabled"/>
          <value>0</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM491"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM494"/>
@@ -30430,12 +30412,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA1" settingAlias="S20C0" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM495"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA1" settingAlias="S20C0" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSE1" settingAlias="SE31"/>
@@ -30470,12 +30452,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S14C4" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM497"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S14C4" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM499"/>
@@ -30694,12 +30676,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA23" settingAlias="S59C5"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM478"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA23" settingAlias="S59C5"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM477"/>
@@ -30710,12 +30692,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON2L" settingAlias="ASDG"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM479"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP4" registerAlias="CCPCON2L" settingAlias="ASDG"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON2L" settingAlias="ASDG"/>
@@ -30746,12 +30728,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S29C1" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM461"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S29C1" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM460"/>
@@ -31498,12 +31480,12 @@
          <value>7</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON3H" settingAlias="OETRIG"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPCON2H" settingAlias="ICSEL" alias="CLC3"/>
          <value>6</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON3H" settingAlias="OETRIG"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP6" registerAlias="CCPCON3H" settingAlias="OETRIG"/>
@@ -32642,12 +32624,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S24C7" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM335"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA29" settingAlias="S24C7" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCPB" settingAlias="IOCPB8"/>
@@ -32666,12 +32648,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA12" settingAlias="S05C3" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM339"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA12" settingAlias="S05C3" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM338"/>
@@ -32730,12 +32712,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S11C4" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM322"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA16" settingAlias="S11C4" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM321"/>
@@ -32858,12 +32840,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="MOD" alias="Dual Edge Compare"/>
-         <value>4</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM314"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="MOD" alias="Dual Edge Compare"/>
+         <value>4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM317"/>
@@ -32934,12 +32916,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA14" settingAlias="S45C3"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM300"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA14" settingAlias="S45C3"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPDE" settingAlias="IOCPDE2" alias="enabled"/>
@@ -32970,12 +32952,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA11" settingAlias="S63C2"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM306"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA11" settingAlias="S63C2"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM305"/>
@@ -32994,12 +32976,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA12" settingAlias="S10C3" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM373"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA12" settingAlias="S10C3" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM372"/>
@@ -33018,12 +33000,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S56C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM374"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S56C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCNG" settingAlias="IOCNG1" alias="enabled"/>
@@ -33066,12 +33048,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA26" settingAlias="S36C6" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM377"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA26" settingAlias="S36C6" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM376"/>
@@ -33138,24 +33120,24 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA30" settingAlias="S40C7" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM362"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA30" settingAlias="S40C7" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA4" alias="clear"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S63C0" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM361"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA3" settingAlias="S63C0" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM364"/>
@@ -33214,24 +33196,24 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA22" settingAlias="S43C5" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM366"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA22" settingAlias="S43C5" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC1" registerAlias="ADCHITH" settingAlias="CHH17" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA2" settingAlias="S34C0" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM365"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA2" settingAlias="S34C0" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM368"/>
@@ -33318,16 +33300,16 @@
          <value>2</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM355"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPCON2H" settingAlias="ICSEL" alias="CMP1"/>
          <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA0" settingAlias="S02C0" alias="enabled"/>
          <value>1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM355"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM354"/>
@@ -33350,12 +33332,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA17" settingAlias="S27C4" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM359"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA17" settingAlias="S27C4" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTCC" registerAlias="RTCSTATL" settingAlias="ALMEVT" alias="enabled"/>
@@ -33378,12 +33360,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S24C1" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM342"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S24C1" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCPB" settingAlias="IOCPB4"/>
@@ -33490,12 +33472,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPSTATL" settingAlias="TRIG" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM348"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MCCP4" registerAlias="CCPSTATL" settingAlias="TRIG" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM347"/>
@@ -33642,12 +33624,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE1" settingAlias="SE26" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM391"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSE1" settingAlias="SE26" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="FeaturePllTwoStagePostScaler"/>
@@ -33666,6 +33648,10 @@
          <value>1:1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM393"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA5" settingAlias="S30C1"/>
          <value>disabled</value>
       </entry>
@@ -33674,16 +33660,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM393"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM392"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP5" registerAlias="CCPCON1L" settingAlias="TMRPS"/>
          <value>1:1</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM392"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM395"/>
@@ -33694,20 +33676,20 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM397"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA15"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM397"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM396"/>
          <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA23" settingAlias="S62C5"/>
          <value>disabled</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM396"/>
-         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA19" settingAlias="S53C4" alias="disabled"/>
@@ -33758,12 +33740,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDACTRL" settingAlias="FCCS" alias="CLC1"/>
-         <value>2</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM398"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDACTRL" settingAlias="FCCS" alias="CLC1"/>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDACTRL" settingAlias="FCCS" alias="CLC2"/>
@@ -33790,12 +33772,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S12C2"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM384"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S12C2"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM383"/>
@@ -33810,12 +33792,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S49C0"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM385"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA3" settingAlias="S49C0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA6" alias="set"/>
@@ -33874,12 +33856,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA14"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM389"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="LCD MODULE" registerAlias="LCDDATA14"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCPG" settingAlias="IOCPG2" alias="enabled"/>
@@ -33990,12 +33972,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="SPISIDL" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MCCP6" registerAlias="CCPCON1H" settingAlias="OPSRC"/>
          <value>Timer Interrupt Event</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="SPISIDL" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="RTCC" registerAlias="ALCFGRPT" settingAlias="AMASK" alias="Every Half Second"/>
@@ -34038,11 +34020,11 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA26" settingAlias="S42C6" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TCKPS" alias="1:1"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TCKPS" alias="1:1"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA26" settingAlias="S42C6" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
@@ -34322,12 +34304,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S12C2" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR3" registerAlias="TCON" settingAlias="TCS" alias="FOSC/2"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S12C2" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA3" alias="set"/>
@@ -37010,12 +36992,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="DISSCK" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="MCCP6" name="sccpFreq"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SPI1" registerAlias="SPICON1L" settingAlias="DISSCK" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDDATA8" settingAlias="S14C2" alias="disabled"/>
@@ -37598,12 +37580,12 @@
          <value>4</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA28" settingAlias="S02C7"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM511"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDDATA28" settingAlias="S02C7"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM510"/>
@@ -37658,24 +37640,24 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA0" settingAlias="S06C0" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM508"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA0" settingAlias="S06C0" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM507"/>
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA21" settingAlias="S25C5"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM509"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="LCD MODULE" registerAlias="LCDSDATA21" settingAlias="S25C5"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SPI1" registerAlias="SPICON1H" settingAlias="FRMSYPW" alias="One serial word length"/>
@@ -37698,12 +37680,12 @@
          <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA31" settingAlias="S60C7" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM504"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="LCD MODULE" registerAlias="LCDSDATA31" settingAlias="S60C7" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="LCD" name="_SYM503"/>
@@ -38996,16 +38978,16 @@
          <hash>3c1942e482a38cb726bad771cb1db6aae867aabbc957eaee701c313420a35147</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\lcd_16seg.h</file>
-         <hash>216ea7529b515775240ac1a9e3a3c755230aed58411d2e62c7bcd27d0a774211</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mccp5_compare.h</file>
          <hash>1378106913b3715fe1603c84759d939f3e7e8aaba3d499dc9c30896b0eec3a76</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\rtcc.c</file>
          <hash>82b0992d034a0263a429304135e896c3554f3c51888fd2dc4349386e660a3d84</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\lcd_16seg.h</file>
+         <hash>216ea7529b515775240ac1a9e3a3c755230aed58411d2e62c7bcd27d0a774211</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\system.h</file>
@@ -39017,7 +38999,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\lcd.h</file>
-         <hash>13b86d1dd4cf1769932d2fdec55d0aa6d6d1e3725a03b766633dcb33643d9a1d</hash>
+         <hash>0469b43dffaa05a44ddc26c11ba2504c4efabef18e4d21babf5f71dab3ad1d7b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\lcd_16seg.c</file>
@@ -39025,7 +39007,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\system.c</file>
-         <hash>12ed9e3ab5c1bfb633b9938aaf55492fb0f6352f5394391d071e216f18b30e9a</hash>
+         <hash>b7d1d095bbe3b2b8ab9698c58cb567b473b2624440e137e1442d4c848d6f9553</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\clock.h</file>
@@ -39041,7 +39023,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>462a866a4d185b07e2871f24aaa97e59535c91da5464bbdc546eebed9362f1f9</hash>
+         <hash>452ea299f529f59dc5e6f985394e47b4bd526de3f3345da2c1cd02ecada5de35</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mccp4_compare.c</file>
@@ -39056,6 +39038,10 @@
          <hash>930f73ea24ec9d999a7f02af2beb77ad73d47ba07d987da7e16b4b20a292efca</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\tmr3.h</file>
+         <hash>984f7e39a19ae0bf44ece5f4a9bca64064784cac3070c8f229194663836dfeae</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\adc1.c</file>
          <hash>1439511f7e787832ccd101b3276f7e56263447e7969797f5f2aa670d6f89d012</hash>
       </entry>
@@ -39064,20 +39050,12 @@
          <hash>174c94982396e5dd90f1459d470dad63f58998d048fa4429c6743fb4ac371e73</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\tmr3.h</file>
-         <hash>984f7e39a19ae0bf44ece5f4a9bca64064784cac3070c8f229194663836dfeae</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.h</file>
          <hash>c16668fadcfadd4625dca2b8103704e396d0e944180f995bbd0534d096ff5acf</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\lcd.c</file>
-         <hash>b67654e4b7d9081e2b928e320984a37a11258eaa7cf2bb669f3450826d9b6a21</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\lcd_7seg.h</file>
-         <hash>1685a2fdb1bc0ffb9e79b264640db72571409482ef5cd6e0a8c7d95957c99198</hash>
+         <hash>47f0780fca5f909a5cee7198ac92f1adcb54755c3ce1f7f8e557e424e7ec0a9e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mccp4_compare.h</file>
@@ -39088,12 +39066,16 @@
          <hash>354e4e5dd38366457338a547dbcc880ae6d9384e292e21252854736ec5927ad4</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\lcd_7seg.h</file>
+         <hash>1685a2fdb1bc0ffb9e79b264640db72571409482ef5cd6e0a8c7d95957c99198</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mccp6_compare.c</file>
          <hash>0a630656477301e06bac8a13e055694ff8b674d8c5654a6673a24a84fb76571d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
-         <hash>2fca02fac9070ebb12469371cea0305b48170f39c8ff7e927e2e42cd09184bc9</hash>
+         <hash>12ab4caa78969e33c5c960ea6d0658439a27025f391a25be39c7689ad016cd7f</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\rtcc.h</file>

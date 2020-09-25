@@ -50,6 +50,11 @@ limitations under the License.
 #define RED_COLOR_LED_INTENSITY     600
 #define GREEN_COLOR_LED_INTENSITY   300
 #define BLUE_COLOR_LED_INTENSITY    150
+
+static uint16_t adc_samples[16];
+static const uint16_t adc_sample_buffer_size = sizeof(adc_samples)/sizeof(uint16_t);
+
+
 typedef enum
 {
     BUTTON_COLOR_RED = 0,
@@ -210,6 +215,9 @@ static void USBPowerModeTask_Deinitialization(void)
 
 static void UpdatePotentiometer(void)
 {
+    static unsigned int current_sample = 0;
+    uint32_t average = 0;
+    
     volatile uint16_t i=0;
    //Enable ADC module
     ADC1_Enable();
@@ -219,7 +227,7 @@ static void UpdatePotentiometer(void)
     //Start Sampling
     ADC1_SoftwareTriggerEnable();
     //ADC sampling delay
-    for(i=0;i<65535;i++)
+    for(i=0;i<10000;i++)
     {
         //Do Nothing
     }
@@ -230,7 +238,20 @@ static void UpdatePotentiometer(void)
         //Do Nothing
     }
     // Get the Potentiometer ADC values 
-    potentiometer = ADC1_ConversionResultGet(channel_AN5);
+   //Fetch an ADC sample from the potentiometer
+    adc_samples[current_sample++] = ADC1_ConversionResultGet(channel_AN5);
+    
+    for(i=0; i<adc_sample_buffer_size; i++)
+    {
+        average += adc_samples[i];
+    }
+    
+    if(current_sample >= adc_sample_buffer_size)
+    {
+        current_sample = 0;
+    }
+    
+    potentiometer = average/adc_sample_buffer_size;
 }
 
 static void UpdateRGB(void)

@@ -9,8 +9,8 @@ This is the demo software which runs on PIC24F LCD USB Curiosity Development Boa
 
 ## Related Documentation
 
-- PIC24F GU/GL Low Power MCUs: https://www.microchip.com/PIC24F-GU-GL
-- PIC24FJ512GU410 microcontroller https://www.microchip.com/PIC24FJ512GU410
+- PIC24F GU/GL Low Power MCUs (https://www.microchip.com/PIC24F-GU-GL)
+- PIC24FJ512GU410 microcontroller (https://www.microchip.com/PIC24FJ512GU410)
 
 
 ## Hardware Used 
