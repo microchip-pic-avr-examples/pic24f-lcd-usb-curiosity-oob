@@ -18,52 +18,26 @@ limitations under the License.
 #define LED3_GREEN_H
 
 #include <xc.h>
+#include <stdbool.h>
+#include "mcc_generated_files/mccp5_compare.h"
 
-#define LED3_GREEN_LAT     LATDbits.LATD10
-#define LED3_GREEN_TRIS    TRISDbits.TRISD10
-
-#define LED_ON  1
-#define LED_OFF 0
-
-#define INPUT  1
-#define OUTPUT 0
-
-#define MAXIMUM_INTENSITY 0x03FF
-#define DEFAULT_INTENSITY (MAXIMUM_INTENSITY/2)
-
-static uint16_t current_intensity = DEFAULT_INTENSITY;
+static bool ismccp5Enabled = false;
 
 void LED3_GREEN_On(void)
 {
-	LED3_GREEN_TRIS = OUTPUT;
-
-    _RP3R = 18; //18 = OCM3A -> RD10[RP3] (green)
-    
-    //Green - uses CCP5-PWM
-    CCP5RAL = 0;
-    CCP5RBL = current_intensity;
-    CCP5PRL = MAXIMUM_INTENSITY;
-    CCP5PRH = 0;
-    CCP5TMRL = 0;
-    CCP5CON1Lbits.MOD = 0b0100;     //dual-compare
-    CCP5CON1Lbits.T32 = 0;          //16-bit mode
-    CCP5CON1Lbits.CLKSEL = 0b000;   //System clock
-    CCP5CON1Lbits.TMRPS = 0b00;     //1:1 Pre-scaler 
-    CCP5CON1Lbits.CCSEL = 0;        //Output compare
-    CCP5CON1Lbits.CCPON = 1;        //Enable  
+	MCCP5_COMPARE_Start();
+    ismccp5Enabled = true;
 }
 
 void LED3_GREEN_Off(void)
 {
-	LED3_GREEN_TRIS = OUTPUT;
-	LED3_GREEN_LAT = LED_OFF;
-    
-    CCP5CON1Lbits.CCPON = 0;        //Disable 
+	MCCP5_COMPARE_Stop();
+    ismccp5Enabled = false;
 }
 
 void LED3_GREEN_Toggle(void)
 {
-	if(CCP5CON1Lbits.CCPON)
+	if(ismccp5Enabled == true)
     {
         LED3_GREEN_Off();
     }
@@ -75,17 +49,7 @@ void LED3_GREEN_Toggle(void)
 
 void LED3_GREEN_SetIntensity(uint16_t new_intensity)
 {    
-    //Convert 16-bit to 10-bit to reduce flicker/jitter
-    new_intensity >>= 6;
-    
-    CCP5RBL = new_intensity;
-    
-    current_intensity = new_intensity;
-    
-    if(CCP5TMRL > new_intensity)
-    {
-        CCP5TMRL = 0;
-    }
+    MCCP5_COMPARE_DualCompareValueSet(0x0,new_intensity);
 }
 
 #endif

@@ -17,6 +17,8 @@ limitations under the License.
 #ifndef RGB_LED3_H
 #define RGB_LED3_H
 
+#include <stdint.h>
+
 void RGB_LED3_SetColor(uint16_t red, uint16_t green, uint16_t blue);
 
 void RGB_LED3_On(void);

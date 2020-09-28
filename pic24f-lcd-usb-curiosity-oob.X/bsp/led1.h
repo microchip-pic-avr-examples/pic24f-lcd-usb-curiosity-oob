@@ -17,27 +17,23 @@ limitations under the License.
 #ifndef LED1_H
 #define LED1_H
 
+#include "../mcc_generated_files/pin_manager.h"
 #include <xc.h>
 
-#define LED1_LAT     LATAbits.LATA0
-#define LED1_TRIS    TRISAbits.TRISA0
 
 inline static void LED1_On(void)
 {
-	LED1_TRIS = 0;
-	LED1_LAT = 1;
+    LED_1_SetHigh();
 }
 
 inline static void LED1_Off(void)
 {
-	LED1_TRIS = 0;
-	LED1_LAT = 0;
+    LED_1_SetLow();
 }
 
 inline static void LED1_Toggle(void)
 {
-	LED1_TRIS = 0;
-	LED1_LAT ^= 1;
+    LED_1_Toggle();
 }
 
 #endif

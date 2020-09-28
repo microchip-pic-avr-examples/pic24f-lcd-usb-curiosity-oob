@@ -16,22 +16,9 @@ limitations under the License.
 
 #include <xc.h>
 #include <stdbool.h>
-
+#include "../mcc_generated_files/pin_manager.h"
 #include "buttons.h"
 
-/*** Button Definitions *********************************************/
-//      S3  is MCLR button
-#define S1_PORT  PORTGbits.RG15
-#define S2_PORT  PORTDbits.RD13
-
-#define S1_TRIS  TRISGbits.TRISG15
-#define S2_TRIS  TRISDbits.TRISD13
-
-#define BUTTON_PRESSED      0
-#define BUTTON_NOT_PRESSED  1
-
-#define PIN_INPUT           1
-#define PIN_OUTPUT          0
 /*********************************************************************
  * Function: bool BUTTON_IsPressed(BUTTON button);
  *
@@ -53,46 +40,14 @@ bool BUTTON_IsPressed ( BUTTON button )
     switch (button)
     {
         case BUTTON_S1:
-            return ( ( S1_PORT == BUTTON_PRESSED ) ? true : false ) ;
+            return SWITCH1_GetValue();
 
         case BUTTON_S2:
-            return ( ( S2_PORT == BUTTON_PRESSED ) ? true : false ) ;
+            return SWITCH2_GetValue() ;
 
         default:
             break;
     }
 
     return false ;
-}
-/*********************************************************************
- * Function: void BUTTON_Enable(BUTTON button);
- *
- * Overview: Returns the current state of the requested button
- *
- * PreCondition: button configured via BUTTON_SetConfiguration()
- *
- * Input: BUTTON button - enumeration of the buttons available in
- *        this demo.  They should be meaningful names and not the names
- *        of the buttons on the silk-screen on the board (as the demo
- *        code may be ported to other boards).
- *         i.e. - ButtonIsPressed(BUTTON_SEND_MESSAGE);
- *
- * Output: None
- *
- ********************************************************************/
-void BUTTON_Enable ( BUTTON button )
-{
-    switch (button)
-    {
-        case BUTTON_S1:
-            S1_TRIS = PIN_INPUT ;
-            break ;
-
-        case BUTTON_S2:
-            S2_TRIS = PIN_INPUT ;
-            break ;
-
-        default:
-            break ;
-    }
 }

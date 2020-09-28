@@ -16,6 +16,7 @@ limitations under the License.
 #include <xc.h>
 #include <stdint.h>
 
+#include "rgb_led3.h"
 #include "led3_red.h"
 #include "led3_green.h"
 #include "led3_blue.h"
