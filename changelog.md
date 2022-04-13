@@ -1,3 +1,8 @@
+# pic24f-lcd-ubs-curiosity-oob v1.0.1
+### Release Highlights
+
+Updated the metadata as per the latest metadata schema.
+
 # pic24f-lcd-ubs-curiosity-oob v1.0.0
 ### Release Highlights
 
