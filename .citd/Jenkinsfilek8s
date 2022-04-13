@@ -15,9 +15,8 @@ pipeline {
         }
     }
    
-
-	environment {
-           /*
+    environment {
+        /*
             Common Information
         */
         NOTIFICATION_EMAIL = 'e50beea8.microchip.com@amer.teams.ms'  
@@ -61,7 +60,6 @@ pipeline {
     }
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
@@ -110,16 +108,16 @@ pipeline {
                 }
             }
         } 
-		
-		// Creating tag in Bitbucket repo
-	   	stage('Bitbucket Tag Creation'){
-			when {
-                    anyOf {
-                        allOf {
-                            not { changeRequest() }
-                            anyOf {branch 'master';}
-                        }
+        
+        // Creating tag in Bitbucket repo
+        stage('Bitbucket Tag Creation') {
+            when {
+                anyOf {
+                    allOf {
+                        not { changeRequest() }
+                        anyOf {branch 'master';}
                     }
+                }
             }
             
             steps {
@@ -166,16 +164,16 @@ pipeline {
                 }
             }
         } 
-	
-	    // Deploying the code to GitHub 
-		stage('GitHub Deploy Source'){
-			when {
-                    anyOf {
-                        allOf {
-                            not { changeRequest() }
-                            anyOf {branch 'master'; branch 'test_deploy';}
-                        }
+
+        // Deploying the code to GitHub 
+        stage('GitHub Deploy Source') {
+            when {
+                anyOf {
+                    allOf {
+                        not { changeRequest() }
+			anyOf {branch 'master'; branch 'test_deploy';}
                     }
+                }
             }
             
             steps {
