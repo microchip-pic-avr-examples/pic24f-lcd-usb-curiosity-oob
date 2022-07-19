@@ -117,16 +117,16 @@
 #include "pin_manager.h"
 #include "clock.h"
 #include "system.h"
-#include "interrupt_manager.h"
-#include "traps.h"
-#include "mccp6_compare.h"
-#include "mccp5_compare.h"
+#include "spi1.h"
+#include "adc1.h"
 #include "mccp4_compare.h"
+#include "mccp5_compare.h"
 #include "rtcc.h"
 #include "tmr3.h"
+#include "interrupt_manager.h"
+#include "traps.h"
 #include "lcd.h"
-#include "adc1.h"
-#include "spi1.h"
+#include "mccp6_compare.h"
 
 void SYSTEM_Initialize(void)
 {

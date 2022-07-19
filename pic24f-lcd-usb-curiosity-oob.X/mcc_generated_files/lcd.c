@@ -58,8 +58,8 @@ void LCD_Initialize()
     // Disable LCD module before configuring
     LCDCONbits.LCDEN = 0;
 
-    //BIASMD 1/3 Bias mode; LP 1:11; WFT Type-A waveform; 
-    LCDPS = 0x0A;	
+    //BIASMD 1/3 Bias mode; LP 1:1; WFT Type-A waveform; 
+    LCDPS = 0x00;	
     //LRLAP High-Power mode; LRLBP High-Power mode; VLCD1PE Bias 1 level is internal; LCDCST Max contrast (Min Resistance); VLCD2PE Bias 2 level is internal; VLCD3PE Bias 3 level is internal; LRLAT Internal LCD reference ladder is always in B Power mode; LCDIRE enabled; 
     LCDREF = 0x80F0;	
     //CPEN disabled; CLKSEL disabled; 
