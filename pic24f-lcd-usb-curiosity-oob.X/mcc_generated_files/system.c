@@ -117,22 +117,22 @@
 #include "pin_manager.h"
 #include "clock.h"
 #include "system.h"
-#include "adc1.h"
-#include "tmr3.h"
 #include "spi1.h"
-#include "mccp6_compare.h"
-#include "mccp5_compare.h"
+#include "adc1.h"
 #include "mccp4_compare.h"
+#include "mccp5_compare.h"
 #include "rtcc.h"
-#include "lcd.h"
+#include "tmr3.h"
 #include "interrupt_manager.h"
 #include "traps.h"
+#include "lcd.h"
+#include "mccp6_compare.h"
 
 void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
-    CLOCK_Initialize();
     INTERRUPT_Initialize();
+    CLOCK_Initialize();
     MCCP4_COMPARE_Initialize();
     MCCP6_COMPARE_Initialize();
     MCCP5_COMPARE_Initialize();
