@@ -1,3 +1,8 @@
+# pic24f-lcd-ubs-curiosity-oob v1.0.2
+### Release Highlights
+
+Fixed the LCD flickering issue.
+
 # pic24f-lcd-ubs-curiosity-oob v1.0.1
 ### Release Highlights
 
