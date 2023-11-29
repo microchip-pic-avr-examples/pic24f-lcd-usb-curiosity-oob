@@ -61,17 +61,17 @@
 #pragma config BSLIM = 8191    //Boot Segment Flash Page Address Limit bits->8191
 
 // FOSCSEL
-#pragma config FNOSC = FRC    //Oscillator Source Selection->Internal Fast RC (FRC)
-#pragma config PLLMODE = DISABLED    //PLL Mode Selection->No PLL used; PLLEN bit is not available
+#pragma config FNOSC = FRC    //Oscillator Source Selection->FRC
+#pragma config PLLMODE = PLL96DIV2    //PLL Mode Selection->96 MHz PLL. Oscillator input is divided by 2 (8 MHz input)
 #pragma config IESO = OFF    //Two-speed Oscillator Start-up Enable bit->Start up with user-selected oscillator source
 
 // FOSC
 #pragma config POSCMD = NONE    //Primary Oscillator Mode Select bits->Primary Oscillator disabled
 #pragma config OSCIOFCN = OFF    //OSC2 Pin Function bit->RC15 (CLKO) outputs CPU clock
 #pragma config SOSCEN = OFF    //SOSC Power Selection Configuration bits->SOSC crystal driver is disabled (RC13/RC14 mode)
-#pragma config PLLSS = PRI    //PLL Secondary Selection Configuration bit->PLL is fed by the Primary oscillator
+#pragma config PLLSS = FRC    //PLL Secondary Selection Configuration bit->PLL is fed by the on-chip Fast RC (FRC) oscillator
 #pragma config IOL1WAY = ON    //Peripheral pin select configuration bit->Allow only one reconfiguration
-#pragma config FCKSM = CSDCMD    //Clock Switching Mode bits->Both Clock switching and Fail-safe Clock Monitor are disabled
+#pragma config FCKSM = CSECMD    //Clock Switching Mode bits->Clock switching is enabled and Fail-safe Clock Monitor is disabled
 
 // FWDT
 #pragma config WDTPS = PS32768    //Watchdog Timer Postscaler bits->1:32768
@@ -118,21 +118,21 @@
 #include "clock.h"
 #include "system.h"
 #include "spi1.h"
-#include "adc1.h"
+#include "mccp6_compare.h"
 #include "mccp4_compare.h"
 #include "mccp5_compare.h"
-#include "rtcc.h"
-#include "tmr3.h"
 #include "interrupt_manager.h"
 #include "traps.h"
 #include "lcd.h"
-#include "mccp6_compare.h"
+#include "tmr3.h"
+#include "adc1.h"
+#include "rtcc.h"
 
 void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
-    INTERRUPT_Initialize();
     CLOCK_Initialize();
+    INTERRUPT_Initialize();
     MCCP4_COMPARE_Initialize();
     MCCP6_COMPARE_Initialize();
     MCCP5_COMPARE_Initialize();
