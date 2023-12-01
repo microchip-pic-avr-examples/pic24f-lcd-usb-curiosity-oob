@@ -92,8 +92,8 @@ void TMR3_Initialize (void)
 {
     //TMR3 0; 
     TMR3 = 0x00;
-    //Period = 0.001 s; Frequency = 4000000 Hz; PR3 499; 
-    PR3 = 0x1F3;
+    //Period = 0.001 s; Frequency = 8000000 Hz; PR3 999; 
+    PR3 = 0x3E7;
     //TCKPS 1:8; TON enabled; TSIDL disabled; TCS FOSC/2; TECS SOSC; TGATE disabled; 
     T3CON = 0x8010;
 

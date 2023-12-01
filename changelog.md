@@ -1,3 +1,8 @@
+# pic24f-lcd-ubs-curiosity-oob v1.0.3
+### Release Highlights
+
+Fixed the issue of USB enumeration caused by invalid USB clock.
+
 # pic24f-lcd-ubs-curiosity-oob v1.0.2
 ### Release Highlights
 
